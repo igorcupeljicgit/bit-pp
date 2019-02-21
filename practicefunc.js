@@ -195,3 +195,75 @@
 
 //     }
 //     concatString("Ha", 8)
+
+
+
+// Write a function to count the number of letter occurrences in a string.
+// "My random string", "n" -> 2
+
+
+// function numbOfLeter(str, a) {
+//     var sum = 0;
+//     for (var i = 0; i< str.length; i++) {
+//         if (str[i] === "a"){
+//             sum++;
+//         }
+//     }
+//     console.log(sum);
+// }
+
+// numbOfLeter("dasdsdsdsdafawawd3fafwaafa","a")
+
+// Write a function to find the position of the first occurrence of a character in a string.The result should be in human numeration form.If there are no occurrences of the character, the function should return -1
+
+// function numbOfLeter(str, a) {
+//     var sum;
+
+//     for (var i = 0; i < str.length; i++) {
+//         if (str[i] == a) {
+//             sum = i + 1;
+//             break;
+//         }
+//         else {
+//             sum = -1;
+//         }
+
+
+
+//     }
+//     console.log(sum);
+
+// }
+
+// numbOfLeter("dasdsdsdsdafcawawd3fafwaafarrrra", "c")
+
+
+// Write a function to find the position of the last occurrence of a character in a string. The result should be in human numeration form. If there are no occurrences of the character, function should return -1.
+
+
+
+// NIJE ZAVRSEN
+
+
+// function numbOfLeter(str, a) {
+//     var sum;
+
+//     for (var i = 0; i < str.length; i++) {
+//         if (str[i] == a) {
+//             sum = i + 1;
+            
+//         }
+//         else {
+//             sum = -1;
+//         }
+       
+
+
+//     }
+//     console.log(sum);
+
+// }
+
+// numbOfLeter("dasdsdsdcrracaa", "c")
+
+
