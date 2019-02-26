@@ -251,12 +251,12 @@
 //     for (var i = 0; i < str.length; i++) {
 //         if (str[i] == a) {
 //             sum = i + 1;
-            
+
 //         }
 //         else {
 //             sum = -1;
 //         }
-       
+
 
 
 //     }
@@ -265,5 +265,167 @@
 // }
 
 // numbOfLeter("dasdsdsdcrracaa", "c")
+
+
+// Define a 10 element array. Take the first two letters from every string (that has at least 2 letters) in the array and create a new string from them. Print it out in the console.
+// Input: [ "M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A" ]
+
+// Output: AnStJoJoDaMa
+
+// function firstTwoLetters(arr) {
+//     var res = "";
+
+//     for (var i = 0; i < arr.length; i++) {
+//         var curentStr = arr[i];
+
+//         if (curentStr.length >= 2) {
+//             for (var j = 0; j < 2; j++) {
+
+
+//                 res += curentStr[j];
+//             }
+
+//         }
+//     }
+//     return res;
+
+// }
+
+// var scale = firstTwoLetters(["M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A"]);
+// console.log(scale);
+
+
+// Write a program that displays all the combinations of two numbers between 1 and 7. Don't display two of the same numbers at the same time. Display the number of possible combinations, as well. (E.g. (1.2),(2,1) is allowed, but not (1,1), (2,2)...).
+
+
+// function printCombination(n) {
+
+//     for (var i=1;i<=n;i++){
+
+//         for(var j=1;j<=n;j++){
+//             if(i==j){
+//                 console.log("they are equal");
+//             }
+//             else{
+//                 console.log(i,j);
+
+//             }
+
+//         }
+
+//     }
+
+// }
+
+// var vitomir=printCombination(7);
+// console.log(vitomir);
+
+
+// Write a program that checks if the entered number is a prime number (i.e. divisible only by 1 and by itself).
+// Input:  17    | 15
+// Output: true  | false
+
+/*
+function primeNumb(n) {
+    if (n === 1) {
+        return false;
+    } else if (n === 2) {
+        return true;
+    } else {
+        for (var i = 2; i < n; i++) {
+            if (n % i === 0) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+
+var prime = primeNumb(4);
+console.log(prime);
+*/
+
+//Write a program that calculates the greatest common divisor of two integers. Note: The greatest common divisor of two non-zero integers is the greatest positive number that divides both numbers with no remainder.
+/*
+function comondivisor(a, b) {
+    var min = 0;
+
+    if (a < b) {
+        min = a;
+
+    }
+    else {
+        min = b;
+    }
+    for (var i = 0; i < min; i++) {
+
+        if (a % i == 0 && b % i == 0) {
+            var broj = i;
+        }
+
+    } return broj;
+}
+var Div = comondivisor(192, 42);
+console.log(Div);*/
+/*
+Check if a given string is a palindrome (spaces are ignored).
+Input:  eye  | Geek  | a nut for a jar of tuna
+Output: true | false | true*/
+/*
+function palindrom(str) {
+    var result = "";
+    for (var i = 0, j = str.length - 1; i < str.length; i++ , j--) {
+        if (str[i] === str[j]) {
+            result = true;
+        } else {
+            result = false;
+        }
+
+    }
+    return result;
+
+}
+palindrom("a nut for a jar of tuna");
+var final = palindrom("ana voli milovana");
+console.log(final);
+/*
+
+/////Write a function that combines two arrays by alternatingly taking elements.*/
+/*
+var letter = ['a', 'b', 'c'];
+var num = [1, 2, 3];
+function together(letter, num) {
+    var newArr = [];
+    for (i = 0; i < letter.length; i++) {
+        newArr[newArr.length] = letter[i];
+        newArr[newArr.length] = num[i];
+
+    } return newArr;
+}
+var result = together(letter, num);
+console.log(result);*/
+/*
+Write a function that rotates a list by k elements.
+
+For example [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]*/
+
+// function rotateList(arr,num){
+//     var res=[];
+//     for( var i=num;i<arr.length;i++){
+//         res[res.length]=arr[i]
+
+//     }
+//     for(i=0;i<num;i++){
+//         res[res.length]=arr[i];
+
+//     }
+//     return res
+
+
+// }   
+// var final=rotateList([1,2,3,4,5,6], 3);
+// console.log(final);
+
 
 
