@@ -1,4 +1,4 @@
-"use strict"
+
 
 
 
@@ -18,6 +18,7 @@ var main = (function () {
 
 
         }
+    
     }
     function ShoppingBag() {
         this.listOfProducts = [];
@@ -87,7 +88,9 @@ var main = (function () {
             if (creditCard.accauntBalance >= shopingKart.calculateTotalPrice()) {
                 console.log("Uspesna kupovina");
             } else {
-                console.log("Nedostaje ti" + shopingKart.calculateTotalPrice() - creditCard.accauntBalance + "dinar");
+                var totalPriceOfProduct=shopingKart.calculateTotalPrice();
+                var realAcountBalance=creditCard.accauntBalance;
+                console.log("Nedostaje ti" +(totalPriceOfProduct-realAcountBalance) + "dinar");
             }
         } else {
 
@@ -100,18 +103,14 @@ var main = (function () {
     var jabuka = new Product("jabuka", 223, "Dec 16 2020")
     var kivi = new Product("kivi", 3663, "Dec 16 2055")
 
-    var visa = new PaymentCard(100, "Jan 10 2020");
+    var visa = new PaymentCard(10000, "Jan 10 2020");
 
     var fer = new ShoppingBag()
     fer.addProduct(banana);
     fer.addProduct(kivi);
     fer.addProduct(jabuka);
 
-    // console.log(fer.listOfProducts);
-    //  console.log(fer.listOfProducts);
 
-    // console.log(fer.getMostExpensive());
-    // console.log(fer.calculateTotalPrice());
     checkOutAndBuy(fer, visa);
 
 })();
