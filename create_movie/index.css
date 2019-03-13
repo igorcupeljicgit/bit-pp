@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3em;
+}
+.newform{
+    width: 90%;
+    padding: 10px;
+    border: 2px solid black;
+    margin: auto;
+
+}
+input,label,select,button{
+    width: 100%;
+    padding: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+.createbutton{
+    background: rgb(75, 119, 9);
+    color: azure;
+}
