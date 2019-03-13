@@ -168,6 +168,7 @@ var main = (function () {
 
 
 
+<<<<<<< HEAD
 // this.numOfBusPassengers = 0;
 
 // this.getNumOfBusPassengers = function () {
@@ -179,3 +180,5 @@ var main = (function () {
 //     }
 //     console.log(this.numOfBusPassengers);
 // }
+=======
+>>>>>>> master
