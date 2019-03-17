@@ -10,14 +10,17 @@
 </head>
 
 <body>
-
     <form class="newform" action="#">
+            <h1>New Festival</h1>
+       
+       
         <label" name="title">Title</label>
             <input class="movietitle" type="text">
 
             <label name='length'>Length</label>
-            <input class="movielength" type="text">
+            <input class="movielength" type="number">
 
+            <label>Genre</label>
             <select class="genre" name="moviegenre">
                 <option value="Horor">Horor</option>
                 <option value="Comedy">Comedy</option>
@@ -27,9 +30,28 @@
             <div class="movieList"></div>
 
     </form>
+    <form class="secondform" action="#" >
+        <label>Program</label>
+        <input type="date" class="dateprogram" name="dateprogram">
+        <button class="createprogram">Create Program</button>
+        <div class="programList"></div>
+    </form>
+<form class="third" action="#">
+        <label >Chose Movie</label>
+        <select class="chosemovie">
+            <option>-</option>
+        </select>
+        <label>Chose Program</label>
+        <select class="choseprogram">
+            <option>-</option>
 
-    <script src="view.js" type="text/javascript"></script>
+        </select>
+
+        <button class="addmovietoprogram">Add Movie</button>
+    </form>
+
     <script src="data.js" type="text/javascript"></script>
+    <script src="view.js" type="text/javascript"></script>
     <script src="index.js" type="text/javascript"></script>
 </body>
 

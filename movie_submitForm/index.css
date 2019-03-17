@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.newMovieForm{
+    width: 90%;
+    padding: 20px;
+    margin: 10px 10px;
+    border: 2px solid black;
+    font-size: 1.2em;
+
+}
+input,select,button{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+.createMovie{
+    background: rgb(12, 90, 2);
+    color: aliceblue;
+    padding: 10px;
+}
