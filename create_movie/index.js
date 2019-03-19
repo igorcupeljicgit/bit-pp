@@ -1,39 +1,39 @@
 function createMovieHandler(event) {
-    
-    event.preventDefault();
-    var movtitle = $movieTitle.value;
-    var movlength = $movieLength.value;
-    var movgenre = $movieGenre.value;
-    
-    var newMovie=createMovie(movtitle, movlength, movgenre);
-    var id=movieList.push(newMovie) -1;
-    
 
-    makeSelectOptionMovie(id,newMovie);
+    event.preventDefault();
+    let movtitle = $movieTitle.value;
+    let movlength = $movieLength.value;
+    let movgenre = $movieGenre.value;
+
+    let newMovie = createMovie(movtitle, movlength, movgenre);
+    let id = movieList.push(newMovie) - 1;
+
+
+    makeSelectOptionMovie(id, newMovie);
 
     renderMovie();
     $movieForm.reset();
 }
 function createProgramHandler(event) {
     event.preventDefault();
-    var date=$newprogram.value;
-    var createProg=createProgram(date);
-    var id = programList.push(createProg) - 1;
+    let date = $newprogram.value;
+    let createProg = createProgram(date);
+    let id = programList.push(createProg) - 1;
 
 
-    makeSelectOptionProgram(id,createProg);
+    makeSelectOptionProgram(id, createProg);
 
     renderProgram();
     $secondForm.reset();
 }
 
-function addMovieHandler(event){
-event.preventDefault();
-    var optionMovie=$choseMovie.value;
-    var optionProgram=$choseProgram.value;
+function addMovieHandler(event) {
+    event.preventDefault();
+    let optionMovie = $choseMovie.value;
+    let optionProgram = $choseProgram.value;
 
-    var selcectedProgrem = programList[optionProgram];
-    var selcectedMovie = movieList[optionMovie];
+    const selcectedProgrem = programList[optionProgram];
+    const selcectedMovie = movieList[optionMovie];
     selcectedProgrem.addmovie(selcectedMovie);
 
 
@@ -43,8 +43,8 @@ event.preventDefault();
 
 
 
-$addMovieButton.addEventListener("click",addMovieHandler);
+$addMovieButton.addEventListener("click", addMovieHandler);
 
-$newProgrambutton.addEventListener("click",createProgramHandler);
+$newProgrambutton.addEventListener("click", createProgramHandler);
 
 $createmoviebutton.addEventListener("click", createMovieHandler);
